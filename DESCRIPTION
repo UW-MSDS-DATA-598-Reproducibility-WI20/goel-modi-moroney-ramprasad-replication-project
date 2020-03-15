@@ -44,6 +44,6 @@ Imports:
     stringr,
     tidytext,
     tm 
-URL: https://github.com/abolim/Reproducibility-Research-Replication
-BugReports: https://github.com/abolim/Reproducibility-Research-Replication/issues
+URL: https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project
+BugReports: https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/issues
 
