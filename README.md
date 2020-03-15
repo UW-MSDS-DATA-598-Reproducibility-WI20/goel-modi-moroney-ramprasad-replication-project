@@ -2,7 +2,7 @@
 This is a repository for the replication project for the Winter 2020 Data Reproducibility course in the Master of Data Science program at University of Washington.
 
 <!-- badges: start -->
-[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/abolim/Reproducibility-Research-Replication/master?urlpath=rstudio)
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/master?urlpath=rstudio)
 [![Build Docker Container](https://github.com/benmarwick/Reproducibility-Research-Replication/workflows/Build-Docker-Container/badge.svg)](https://github.com/benmarwick/Reproducibility-Research-Replication/actions)
 [![DOI](https://img.shields.io/badge/OSF-DOI%3A%2010.17605%2FOSF.IO%2FRX9SQ-brightgreen)](https://doi.org/10.17605/OSF.IO/RX9SQ)
 <!-- badges: end -->
@@ -33,14 +33,14 @@ Git Repository: https://github.com/younggns/comparative-abusive-lang/blob/master
 ### DATA
 
 All data files required for our replication project can be found in the 'data' directory in this repository.
-URL: https://github.com/abolim/Reproducibility-Research-Replication/tree/master/Data
+URL: https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/tree/master/Data
 
 This directory contains all details about the original data which was used by the authors of the research as well as the data which was sampled and processed for this replication study. Please refer the README.md in the data directory for additional details.
 
 ### ANALYSIS
 
 The analysis directory contains the R Markdown report detailing the procedure and results of this replication study. This directory also contains the intermediate outputs, R scripts, data and images required to Knit the R Markdown report file successfully. For additional details, please refer the README.md in this directory.
-URL: https://github.com/abolim/Reproducibility-Research-Replication/tree/master/analysis
+URL: https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/tree/master/analysis
 
 ### DEPENDENCIES
 
@@ -73,5 +73,5 @@ The project is licensed as MIT. Please read our [license details](LICENSE.md).
 
 ### CONTRIBUTING
 
-We welcome contributions from everyone. If you would like to make a contribution, please read our [contributor guidelines](CONTRIBUTING.md). Please note that this project is released with a [Contributor Code of Conduct](https://github.com/abolim/Reproducibility-Research-Replication/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+We welcome contributions from everyone. If you would like to make a contribution, please read our [contributor guidelines](CONTRIBUTING.md). Please note that this project is released with a [Contributor Code of Conduct](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
