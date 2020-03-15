@@ -70,10 +70,10 @@ include_graphics(here("analysis","WordCloud.png"))
 
 ### Data Pre-processing
 
-The original dataset contains 14,509 tweets and can be found in the 'Data' folder as [twitter-hate-speech-classifier-data.csv](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/Data) in our repository. When we executed our data processing scripts using this data, we generated a huge intermediate modeling dataset which could not be processed using our local machines due to memory and hardware constraints. 
+The original dataset contains 14,509 tweets and can be found in the 'Data' folder as [twitter-hate-speech-classifier-data.csv](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/Data) in our repository. When we executed our data processing scripts using this data, we generated a huge intermediate modeling dataset which could not be processed using our local machines due to memory and hardware constraints. 
 Therefore for our replication study, we have taken a random sample of 3000 tweets from the original dataset, which reasonably represents the original distribution of classes.
 
-Below is a visual representation of the distribution of tweets by classes for this sampled dataset which can be found in the 'analysis' folder in our repository as [sampled_tweet_dataset.csv](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/aanalysis). The R code used to generate this dataset can be found in [001-tweet-cleaning.R](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/analysis)
+Below is a visual representation of the distribution of tweets by classes for this sampled dataset which can be found in the 'analysis' folder in our repository as [sampled_tweet_dataset.csv](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/analysis). The R code used to generate this dataset can be found in [001-tweet-cleaning.R](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/analysis)
 
 ```{r echo = FALSE, eval=FALSE}
 #Note to reader: This is a long-running code, but will not be evaluated unless the you set `eval=TRUE` 
@@ -107,14 +107,14 @@ refined_data <- read.csv(here("analysis","refined_tweet_dataset.csv"))
 kable(refined_data[1:5,c('tweet_text', 'tweet_clean1')], caption = "Table 2: Refined dataset with cleaned tweets")
 ```
 
-This [refined_tweet_dataset.csv](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/analysis) can be generated using the R code
-[001-tweet-cleaning.R](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/analysis) and is stored in the 'analysis' folder.
+This [refined_tweet_dataset.csv](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/analysis) can be generated using the R code
+[001-tweet-cleaning.R](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/analysis) and is stored in the 'analysis' folder.
 
 ### Tokenization and One-hot Encoding
 
 The next step in reproducing was to create features for the model by tokenizing the tweets. In the original Python code, the authors had used the 'nltk' library. We tried various packages in R which provide tokenization functions and ultimately concluded that the 'quanteda'was the most suitable library to generate similar tokens as original study. 
 
-After tokenization, the next step was to encode the tokens using one-hot encoding to generate features. After one-hot encoding the output csv file was stored in the data folder as [prepared_tweet_dataset.csv'](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/Data). This dataset contains 3,000 tweets and 7,237 features generated. This contains the one-hot encoded data for the selected 3000 tweets which is an input to run the machine learning model. 
+After tokenization, the next step was to encode the tokens using one-hot encoding to generate features. After one-hot encoding the output csv file was stored in the data folder as [prepared_tweet_dataset.csv'](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/Data). This dataset contains 3,000 tweets and 7,237 features generated. This contains the one-hot encoded data for the selected 3000 tweets which is an input to run the machine learning model. 
 
 Below is a snapshot for a few rows and columns from this dataset.
 
@@ -129,7 +129,7 @@ kable(model_data[1:7,1:10], caption = "Table 3: Prepared dataset with tokenized 
 
 ### Modeling
 The above dataset can be used to bypass the resource intensive pre-processing steps. It can be used to directly train the model and reproduce the figures that we have claimed to replicate using this project.
-The modeling script can be found in [002-modeling.R](https://github.com/abolim/Reproducibility-Research-Replication/tree/master/analysis)
+The modeling script can be found in [002-modeling.R](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/analysis)
 
 There are certain other factors to keep in mind when it comes to detecting abusive text on social media. A lot of the abusive text online tends to go undetected because of the context relative, sarcastic, subjective nature of this text. Some tweets can be classified as objectively abusive. However there are a lot of situations wherein that nuance is gone undetected. These are some glaring pitfalls of detecting abusive and hateful language online. Most neural network models are being trained to circumvent these drawbacks. However, since our model performs logistic regression, it is important to note that these factors have not been accounted for.
 
