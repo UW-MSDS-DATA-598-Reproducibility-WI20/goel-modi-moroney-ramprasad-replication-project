@@ -71,6 +71,10 @@ R packages and versions:
 
 The project is licensed as MIT. Please read our [license details](LICENSE.md). 
 
+Text and Figures : MIT + file LICENSE
+Code : MIT + file LICENSE
+Data : MIT + file LICENSE
+
 ### CONTRIBUTING
 
 We welcome contributions from everyone. If you would like to make a contribution, please read our [contributor guidelines](CONTRIBUTING.md). Please note that this project is released with a [Contributor Code of Conduct](https://github.com/UW-MSDS-DATA-598-Reproducibility-WI20/goel-modi-moroney-ramprasad-replication-project/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
